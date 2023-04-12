@@ -1,0 +1,10 @@
+type ClaimRemark @entity {
+  id: ID!
+  signer: String! @index # contributor
+  value: String! # remark content
+  addressValue: String! # target address that receive nft
+  blockNumber: Int! @index
+  extrinsicIndex: Int!
+  extrinsicHash: String!
+  extrinsicTimestamp: DateTime!
+}
